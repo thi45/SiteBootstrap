@@ -33,73 +33,57 @@
 
 <div class="container-fluid mt-3">
 <h3>Contato</h3>
-    <form class="row g-3">
-     
-      <div class="col-md-7 col-sm-12">
-      <div class="form-floating">
-      <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo" required>
-      <label for="nome">Nome Completo</label>
-      </div>
-      </div>
-
-      <div class="col-md-5 col-sm-12">
-      <div class="form-floating">
-      <input type="email" name="e-mail" id="e-mail" class="form-control" placeholder="E-Mail" required>
-      <label for="e-mail">E-Mail</label>
-      </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-      <div class="form-floating">
-      <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required>
-      <label for="senha">Senha</label>
-      </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-      <div class="form-floating">
-      <input type="date" name="datanasc" id="datanasc" class="form-control">
-      <label for="datanasc">Data de Nascimento</label>
-      </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-      <div class="form-floating">
-        <select name="categoria" id="categoria" class="form-select" required>
-          <option value="" selected disabled>Selecione</option>
-          <option value="frontend">Frontend</option>
-          <option value="backend">Backend</option>
-        </select>
-        <label for="categoria">Categoria</label>
-      </div>
-      </div>
-
-      <div class="col-md-12 col-sm-12">
-        <label class="form-label d-block">Tipo</label>
-        <div class="form-check form-check-inline">
-        <input type="radio" name="tipo" id="aluno" class="form-check-input">
-        <label for="aluno" class="form-check-label">Aluno</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-        <input type="radio" name="tipo" id="professor" class="form-check-input">
-        <label for="professor" class="form-check-label">Professor</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <div class="form-check">
-          <input type="checkbox" name="termos" id="termos" class="form-check-input" required>
-          <label for="termos" class="form-check-label">Aceite os Termos</label>
-        </div>
-      </div>
-      <div class="col-12 mb-2">
-        <button type="submit" class="btn btn-success">Enviar</button>
-          <button type="reset" class="btn btn-warning">Limpar</button>
-            <button type="button" class="btn btn-danger">Cancelar</button>
-      </div>
-
-    </form>
+   <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nome do Produto</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Produto1">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Categoria do Produto</label>
+<select class="form-select" aria-label="Default select example">
+  <option selected disabled>Escolha a Categoria</option>
+  <option value="1">Vestimenta</option>
+  <option value="2">Cosméticos</option>
+  <option value="3">Pet</option>
+</select>
+  </div>
+<div class="input-group col-md-12">
+  <label for="inputprice col-md-12">Valor do Produto</label>
+  <span class="input-group-text col-md-12">R$</span>
+  <input type="text" class="form-control" aria-label="Quantidade Inteira em Reais">
+  <span class="input-group-text">.00</span>
+</div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Quantidade</label>
+    <input type="text" class="form-control" id="inputAmount" placeholder="Quantidade do Produto">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
 </div>
 
 
